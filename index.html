@@ -15,10 +15,35 @@
 
       <title>Manish Shrestha | Computer Engineer</title>
       <script type="text/JavaScript">
-         document.addEventListener('contextmenu', function(event) {
-             event.preventDefault();
-         });
-     </script>
+// Disable right-click context menu
+document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    // Disable specific keyboard shortcuts
+    document.addEventListener('keydown', function(e) {
+        // Check for Option + Command + I (Mac)
+        if ((e.metaKey && e.altKey && (e.key === 'I' || e.key === 'i')) ||
+            // Check for Ctrl + Shift + I (Windows/Linux)
+            (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i')) ||
+            // Check for F12 (common shortcut to open developer tools)
+            (e.key === 'F12') ||
+            // Check for Ctrl + Shift + C (Windows/Linux)
+            (e.ctrlKey && e.shiftKey && (e.key === 'C' || e.key === 'c')) ||
+            // Check for Option + Command + C (Mac)
+            (e.metaKey && e.altKey && (e.key === 'C' || e.key === 'c')) ||
+            // Check for Ctrl + Shift + J (Windows/Linux)
+            (e.ctrlKey && e.shiftKey && (e.key === 'J' || e.key === 'j')) ||
+            // Check for Option + Command + J (Mac)
+            (e.metaKey && e.altKey && (e.key === 'J' || e.key === 'j')) ||
+            // Check for Ctrl + Shift + K (Windows/Linux)
+            (e.ctrlKey && e.shiftKey && (e.key === 'K' || e.key === 'k')) ||
+            // Check for Option + Command + K (Mac)
+            (e.metaKey && e.altKey && (e.key === 'K' || e.key === 'k'))) {
+            e.preventDefault();
+        }
+    });
+</script>
    </head>
    <body>
       <!--==================== HEADER ====================-->
