@@ -177,6 +177,10 @@ body.dark-theme{
   color: var(--title-color);
 }
 
+.dark-theme .projects__model{
+  background: linear-gradient(180deg,hsla(0, 0%, 0%, 0) 0%,  hsl(20.77deg 100% 50%));
+}
+
 .dark-theme .contact__input{
   background-color: aliceblue;
 }
