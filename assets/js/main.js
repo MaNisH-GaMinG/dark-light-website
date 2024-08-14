@@ -112,7 +112,7 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moo
 if (selectedTheme) {
   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'ri-sun-line' ? 'add' : 'remove'](iconTheme)
+  themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
 }
 
 // Activate / deactivate the theme manually with the button
@@ -139,4 +139,3 @@ sr.reveal(`.home__image`,{origin: 'bottom'})
 sr.reveal(`.about__data, .skills__data`,{origin: 'left'})
 sr.reveal(`.about__image, .skills__content`,{origin: 'right'})
 sr.reveal(`.services__card, .projects__card`,{interval: 100})
-
